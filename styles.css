@@ -52,6 +52,10 @@ body {
     color: var(--text-primary);
     transition: color 0.3s, font-weight 0.3s;
 }
+.nav-links a:focus {
+    color: var(--text-primary);
+    transition: color 0.3s, font-weight 0.3s;
+}
 .nav-links a:hover {
     font-weight: bold;
     color: var(--accent); 
@@ -100,3 +104,77 @@ body.light-mode .themeicon {
     left: calc(100% - 24px);
 }
 
+
+/* Section Styles */
+section {
+    min-height: 100vh;
+    padding: 0 1rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero .subtitle {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+.hero p {
+    max-width: 600px;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    border-radius: 5px;
+    transition: all 0.3s;
+    animation: fadeInUp 0.8s ease 0.6s backwards;
+}
+
+.cta-button:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+    transform: translateY(-3px);
+}
+
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    section {
+        padding: 6rem 1rem 2rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1.5rem;
+    }
+}
