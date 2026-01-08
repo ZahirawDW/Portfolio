@@ -28,6 +28,7 @@ html {
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     background: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
@@ -41,7 +42,7 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--accent);
 }
 .logo:hover {
@@ -84,7 +85,6 @@ body {
 
 .theme-toggle:focus {
     outline: 2px solid var(--accent);
-    outline-offset: 2px;
 }
 /* Theme Toggle icon */
 .themeicon{
@@ -94,9 +94,6 @@ body {
     left: 4px;
     transform: translateY(-50%);
     transition: left 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 20px;
     height: 20px;
 }
@@ -105,39 +102,50 @@ body.light-mode .themeicon {
 }
 
 
-/* Section Styles */
+/* Global Section Styles */
 section {
-    min-height: 100vh;
-    padding: 0 1rem 4rem;
-    max-width: 1200px;
+    max-height: 100vh;
+    padding: 0 1rem;
     margin: 0 auto;
+}
+
+/* Sections Title Styles */
+h2, .about-skills h3 {
+    position: relative;
+    color: var(--text-primary);
+    display: inline-block;
+}
+
+h2::after, .about-skills h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent);
 }
 
 /* Hero Section */
 .hero h1 {
     font-size: 4rem;
-    margin-bottom: 1rem;
     animation: fadeInUp 0.8s ease;
 }
 
 .hero .subtitle {
     font-size: 2rem;
     color: var(--text-secondary);
-    margin-bottom: 1rem;
     animation: fadeInUp 0.8s ease 0.2s backwards;
 }
 
 .hero p {
-    max-width: 600px;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
     font-size: 1.1rem;
     animation: fadeInUp 0.8s ease 0.4s backwards;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 1rem 2rem;
     background: transparent;
     border: 2px solid var(--accent);
     color: var(--accent);
@@ -150,6 +158,25 @@ section {
     background: var(--accent);
     color: var(--bg-primary);
     transform: translateY(-3px);
+}
+
+
+/* About Section */
+.skills-list {
+    height: 50%;
+    gap: 0.5rem 1.1rem;
+    list-style: none;
+} 
+
+.skills-list li {
+    padding: 0.5rem 0.2rem;
+    color: var(--text-secondary);
+}
+
+.skills-list li::before {
+    content: '▹ ';
+    color: var(--accent);
+    font-weight: bold;
 }
 
 
