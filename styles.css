@@ -31,7 +31,6 @@ body {
     font-family: 'Inter', sans-serif;
     background: var(--bg-primary);
     color: var(--text-primary);
-    line-height: 1.6;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -104,9 +103,10 @@ body.light-mode .themeicon {
 
 /* Global Section Styles */
 section {
-    max-height: 100vh;
+    min-height: 100vh;
     padding: 0 1rem;
     margin: 0 auto;
+    scroll-margin-top: 70px;
 }
 
 /* Sections Title Styles */
@@ -163,7 +163,6 @@ h2::after, .about-skills h3::after {
 
 /* About Section */
 .skills-list {
-    height: 50%;
     gap: 0.5rem 1.1rem;
     list-style: none;
 } 
@@ -177,6 +176,41 @@ h2::after, .about-skills h3::after {
     content: '▹ ';
     color: var(--accent);
     font-weight: bold;
+}
+
+/* Projects Section */
+.card{
+    width: 100%;
+    max-width: 20rem;
+    background: var(--bg-secondary);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.card-title{
+    color: var(--accent);
+}
+.card-text{
+    color: var(--text-secondary);
+}
+.card-body .btn{
+    color: var(--accent);
+}
+.card-body .btn:hover{
+    color: var(--accent-hover);
+}
+.badges .badge{
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+.badges .badge:hover{
+    background: var(--accent);
+    color: var(--bg-primary);
 }
 
 
