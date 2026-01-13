@@ -19,15 +19,23 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('light-mode');
     }
     updateThemeIcon(savedTheme === 'light');
+
+    // animate on load
+    fadeInOnScroll();
 });
 
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+// Scroll Animation
+function fadeInOnScroll() {
+    const fadeElements = document.querySelectorAll('.fade-in-section');
+    
+    fadeElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight * 0.85) {
+            element.classList.add('is-visible');
         }
     });
-});
+}
+
+window.addEventListener('scroll', fadeInOnScroll)
