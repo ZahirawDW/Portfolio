@@ -160,9 +160,8 @@ window.addEventListener('DOMContentLoaded', () => {
         // disable button during submit
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         if (submitBtn) {
-            // submitBtn.disabled = true;
+            submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
-            alert('Form is valid and ready to be submitted.');
         }
 
         // Form will submit to Netlify 
