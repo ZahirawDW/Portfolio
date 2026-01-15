@@ -166,6 +166,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
         // Form will submit to Netlify 
     });
+    
+    // Footer - Current year
+    const yearElement = document.getElementById('currentYear');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+    
+    // Back to top functionality
+    const backToTopBtn = document.getElementById('backToTop');
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0});
+        });
+    }
 });
 
 window.addEventListener('scroll', fadeInOnScroll)

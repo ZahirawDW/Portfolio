@@ -11,6 +11,7 @@
     <title>EL-MAHJOUR Zahira - Frontend Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
     crossorigin="anonymous">
@@ -44,7 +45,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero mb-5 d-flex">
+    <section id="home" class="hero d-flex">
         <div class="container-lg d-flex flex-column flex-md-row align-items-center justify-content-between">
             <div class="col-11 col-md-7 col-lg-6">
                 <h1 class="mb-3">Hi, I'm Zahira</h1>
@@ -92,7 +93,7 @@
 
     
    <!-- Projects Section -->
-    <section id="projects" class="mb-5 fade-in-section">
+    <section id="projects" class="fade-in-section">
         <div class="container-lg">
             <h2 class="mb-5">Featured Projects</h2>
             <div class="d-flex gap-4 justify-content-center flex-wrap">
@@ -163,7 +164,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="mb-5 fade-in-section">
+    <section id="contact" class="fade-in-section">
         <div class="container-lg">
             <h2 class="mb-5">Get In Touch</h2>
             <div class="row justify-content-center">
@@ -208,6 +209,68 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 mt-5">
+        <div class="container-lg">
+            <!-- Main Footer Content -->
+            <div class="row mb-4">
+                <!-- About + Social Column -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="color: var(--accent);">EL-MAHJOUR Zahira</h5>
+                    <p class="mb-3" style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Frontend Developer building responsive, accessible web experiences with clean code and modern design.
+                    </p>
+                    <!-- Social Icons -->
+                    <div class="social-links d-flex gap-2">
+                        <a href="https://github.com/ZahirawDW" target="_blank" class="social-link" 
+                        aria-label="GitHub" title="GitHub" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zahira-el-mahjour" target="_blank" class="social-link"
+                        aria-label="LinkedIn" title="LinkedIn" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0 quick-links">
+                    <h6 class="mb-3" style="color: var(--text-primary);">Quick Links</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#projects" class="footer-link">Projects</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0 ps-3">
+                    <h6 class="mb-3" style="color: var(--text-primary);">Services</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li class="footer-text">• Responsive Web Design</li>
+                        <li class="footer-text">• Interactive UI Development</li>
+                        <li class="footer-text">• Frontend Development</li>
+                        <li class="footer-text">• Custom Websites</li>
+                        <li class="footer-text">• Landing Pages</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-4 border-top d-flex flex-column flex-md-row justify-content-between align-items-center" 
+                style="border-color: rgba(95, 230, 199, 0.2) !important;">
+                <p class="mb-3 mb-md-0 small" style="color: var(--text-secondary);">
+                    &copy; <span id="currentYear"></span> EL-MAHJOUR Zahira. All rights reserved.
+                </p>
+                <button id="backToTop" class="btn-back-top" aria-label="Back to Top" title="Back to Top">
+                    <i class="fas fa-arrow-up"></i>
+                    Back to Top
+                </button>
+            </div>
+        </div>
+    </footer>
 
     <!-- JavaScript -->
     <!-- Bootstrap JS Bundle -->
