@@ -106,7 +106,6 @@ body.light-mode .themeicon {
 section {
     min-height: 100vh;
     padding: 0 1rem;
-    margin: 0 auto;
     scroll-margin-top: 70px;
 }
 
@@ -386,7 +385,10 @@ body.light-mode .contact-form .form-control:focus {
 /* Mobile breakpoint */
 @media (max-width: 768px) {
     section {
-        padding: 7rem 1rem 2rem;
+        padding: 1rem 1rem 2rem;
+    }
+    .hero{
+        padding-top: 7rem;
     }
     .hero h1 {
         font-size: 2.5rem;
