@@ -52,7 +52,8 @@ Open `index.html` in your browser.
 
 ## 📱 Project Structure
 
-PORTFOLIO/
+```
+portfolio/
 ├── index.html          # Main portfolio page
 ├── success.html        # Post-form success page
 ├── styles.css          # Theme variables, animations, responsive
@@ -64,6 +65,7 @@ PORTFOLIO/
 │   ├── icon.png
 │   └── terravita-project.png
 └── README.md          # Project overview & instructions
+```
 
 ## 💡 Features Overview
 
