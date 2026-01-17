@@ -21,23 +21,23 @@ A clean, modern personal portfolio designed for freelance frontend developers an
 
 ## 🛠️ Built With
 
-**Core:** HTML5, CSS3 (Custom Properties, Animations), Vanilla JavaScript (ES6+)
-**Framework:** Bootstrap 5.3.8 (Grid, Forms, Cards, Navbar)
-**Icons:** Font Awesome 6.4 + Emoji toggler
-**Forms:** Netlify Forms (serverless backend, Netlify spam protection)
-**Fonts:** Google Fonts – Inter (400, 600, 700)
-**Storage:** localStorage (theme + potential form state)
-**Tools:** Git/GitHub, Netlify (deployment/hosting)
+- **Core:** HTML5, CSS3 (Custom Properties, Animations), Vanilla JavaScript (ES6+)
+- **Framework:** Bootstrap 5.3.8 (Grid, Forms, Cards, Navbar)
+- **Icons:** Font Awesome 6.4 + Emoji toggler
+- **Forms:** Netlify Forms (serverless backend, Netlify spam protection)
+- **Fonts:** Google Fonts – Inter (400, 600, 700)
+- **Storage:** localStorage (theme + potential form state)
+- **Tools:** Git/GitHub, Netlify (deployment/hosting)
 
 ## 🔍 Code Quality
 
 Analyzed for junior freelancer standards:
 
-✅ **Responsive Tested** - Chrome DevTools (mobile/tablet/desktop)
-✅ **Accessibility** - Semantic HTML, ARIA labels, focus styles
-✅ **Performance** - minified CDNs
-✅ **Security** - Form sanitization (HTML escaping), honeypot, no inline JS
-✅ **Cross-Browser** - Chrome, Firefox, Edge, Safari
+- ✅ **Responsive Tested** - Chrome DevTools (mobile/tablet/desktop)
+- ✅ **Accessibility** - Semantic HTML, ARIA labels, focus styles
+- ✅ **Performance** - minified CDNs
+- ✅ **Security** - Form sanitization (HTML escaping), honeypot, no inline JS
+- ✅ **Cross-Browser** - Chrome, Firefox, Edge, Safari
 
 ## 📦 Installation & Run Locally
 
@@ -71,16 +71,16 @@ portfolio/
 
 ### Theme System
 
-Toggle button with sliding emoji icon (moon/sun)
-CSS custom properties switch colors instantly
-Persists user preference across sessions
+- Toggle button with sliding emoji icon (moon/sun)
+- CSS custom properties switch colors instantly
+- Persists user preference across sessions
 
 ### Form Validation & Security
 
-Real-time checks (blur/input): name (min 4 chars), email regex, message (10-2000 chars)
-Dynamic error divs + Bootstrap .is-invalid red borders/icons
-XSS-safe sanitization: escapes & < > " ' to entities
-Submit: disables button ("Sending..."), focuses first error
+- Real-time checks (blur/input): name (min 4 chars), email regex, message (10-2000 chars)
+- Dynamic error divs + Bootstrap .is-invalid red borders/icons
+- XSS-safe sanitization: escapes & < > " ' to entities
+- Submit: disables button ("Sending..."), focuses first error
 
 ## Projects Highlighted
 
@@ -91,20 +91,20 @@ Submit: disables button ("Sending..."), focuses first error
 
 ## 🌟 Technical Highlights
 
-**No Dependencies** - Pure vanilla JS 
-**Theme-Aware** - All elements adapt (navbar, cards, forms, footer)
-**Performance** - Fixed navbar, optimized animations (no RAF loop)
-**SEO-Friendly** - Meta tags, semantic sections, alt texts
-**Mobile Optimized** - Custom media queries + Bootstrap breakpoints
-**Form Security** -  Honeypot + Netlify spam protection
+- **No Dependencies** - Pure vanilla JS 
+- **Theme-Aware** - All elements adapt (navbar, cards, forms, footer)
+- **Performance** - Fixed navbar, optimized animations (no RAF loop)
+- **SEO-Friendly** - Meta tags, semantic sections, alt texts
+- **Mobile Optimized** - Custom media queries + Bootstrap breakpoints
+- **Form Security** -  Honeypot + Netlify spam protection
 
 ## 🎯 Browser Support
 
-✅ Chrome 100+ (recommended)
-✅ Firefox 90+
-✅ Safari 15+
-✅ Edge 100+
-✅ Mobile: iOS Safari, Chrome Android
+- ✅ Chrome 100+ (recommended)
+- ✅ Firefox 90+
+- ✅ Safari 15+
+- ✅ Edge 100+
+- ✅ Mobile: iOS Safari, Chrome Android
 
 ## 🚀 Deployment
 
